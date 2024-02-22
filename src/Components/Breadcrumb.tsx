@@ -25,6 +25,7 @@ interface BreadcrumbProps {
 
 export default function BreadcrumbComponent({ statuses, selected }: BreadcrumbProps) {
     const [size, setSize] = useState<Size>(Size.large);
+    const [activeIndexes, setActiveIndexes] = useState<number[]>([selected])
 
     const handleResize = () => {
         if (window.innerWidth < (150 + (statuses.length - 1) * 50))
@@ -52,11 +53,12 @@ export default function BreadcrumbComponent({ statuses, selected }: BreadcrumbPr
                                 icon={status.icon}
                                 name={status.name}
                                 color={status.color}
-                                selected={index == selected}
                                 position={index === 0 ? "start" : index === statuses.length -1 ? "end" : "middle"}
                                 small={size == Size.medium}
-                                previous={index + 1 == selected}
                                 nextColor={index + 1 < statuses.length ? statuses[index + 1].color : null}
+                                activeIndexes={activeIndexes}
+                                index={index}
+                                changeIndex={setActiveIndexes}
                             />
                         )
                     })
