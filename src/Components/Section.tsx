@@ -56,7 +56,7 @@ export default function Section({
                 </div>
             </BreadcrumbSection>
             {position !== "end" ?
-                <BreadcrumbDivider className="divider" style={dividerStyle}>
+                <BreadcrumbDivider className="dividerComponent" style={dividerStyle}>
                     <svg className="chevron"
                          xmlns="http://www.w3.org/2000/svg" width="5" height="28" viewBox="0 0 5 28"
                          fill={active ? color : AppConstants.Colors.SilverGray}>

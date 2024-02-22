@@ -1,0 +1,47 @@
+.StatusDropdown {
+    display: flex;
+    padding: 3px 8px;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 20px;
+}
+
+.iconDropdown {
+    color: white;
+    width: 16.641px;
+    height: 16.641px;
+    flex-shrink: 0;
+}
+
+.iconDiv {
+    display: flex;
+    width: 12px;
+    height: 7px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.dropdownText {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: white;
+    margin: 0;
+}
+
+.innerDivs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.mainDropdown {
+    display: flex;
+    justify-content: space-between;
+}
+
+

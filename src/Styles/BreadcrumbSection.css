@@ -22,7 +22,7 @@
     cursor: pointer;
 }
 
-.divider {
+.dividerComponent {
     display: flex;
     width: 4.5px;
     height: 28px;
