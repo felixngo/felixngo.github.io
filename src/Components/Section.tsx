@@ -34,7 +34,7 @@ export default function Section({
         borderRadius: (position === "start") ? "6px 0px 0px 6px" : (position === "end") ? "0px 6px 6px 0px" : "",
         backgroundColor: isActive() ? `${color}` : AppConstants.Colors.SilverGray,
         color: isActive() ? "white" : AppConstants.Colors.EarlGray,
-        minWidth: small && !isActive() ? "50px" : "120px",
+        minWidth: small && !isActive() ? "50px" : "120px"
     }
 
     const dividerStyle = {
