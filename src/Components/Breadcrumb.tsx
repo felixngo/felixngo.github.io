@@ -37,6 +37,7 @@ export default function BreadcrumbComponent({ statuses, selected }: BreadcrumbPr
     }
 
     useEffect(() => {
+        handleResize();
         window.addEventListener("resize", handleResize);
         return () => {
             window.removeEventListener('resize', handleResize);

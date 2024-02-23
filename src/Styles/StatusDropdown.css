@@ -1,26 +1,39 @@
 .StatusDropdown {
-    display: flex;
-    padding: 3px 8px;
-    justify-content: center;
-    gap: 10px;
+    height: 26px;
+    display: inline-flex !important;
+    align-items: center;
     border-radius: 20px;
+    padding: 3px 8px;
 }
 
-.iconDropdown {
+
+/*display: flex;*/
+/*padding: 3px 8px;*/
+/*justify-content: center;*/
+/*gap: 10px;*/
+/*border-radius: 20px;*/
+/*}*/
+
+
+.StatusDropdownTriggers {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.elementIcon {
     color: white;
-    width: 16.641px;
-    height: 16.641px;
-    flex-shrink: 0;
+    margin: 0 !important;
 }
 
 .iconDiv {
-    display: flex;
-    width: 12px;
-    height: 7px;
-    padding: 5px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+    text-align: center;
+}
+
+.chevronIconDiv {
+    margin-top: 2px;
+    text-align: center;
 }
 
 .dropdownText {
@@ -36,7 +49,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
 }
 
 .mainDropdown {

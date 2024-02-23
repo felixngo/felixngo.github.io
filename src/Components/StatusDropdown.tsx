@@ -34,13 +34,15 @@ export default function StatusDropdown({statuses, selectedIndex}: StatusDropdown
             scrolling={true}
             icon={null}
             trigger={
-                <div className="StatusDropdown">
+                <div className="StatusDropdownTriggers">
                     <div className="iconDiv">
-                        <Icon className="iconDropdown" name={`${statuses[selected].icon as SemanticICONS}`}/>
+                        <Icon className="elementIcon" name={`${statuses[selected].icon as SemanticICONS}`}/>
                     </div>
                     <p className="dropdownText">{statuses[selected].name}</p>
                     <p className="dropdownText">|</p>
-                    <Icon className="iconDropdown" name='chevron down'/>
+                    <div className="chevronIconDiv">
+                        <Icon className="elementIcon" name='chevron down'/>
+                    </div>
                 </div>
 
             }
