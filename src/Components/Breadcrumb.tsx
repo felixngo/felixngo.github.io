@@ -51,6 +51,7 @@ export default function BreadcrumbComponent({ statuses, selected }: BreadcrumbPr
                     statuses.map((status, index) => {
                         return (
                             <Section
+                                key={index}
                                 icon={status.icon}
                                 name={status.name}
                                 color={status.color}
