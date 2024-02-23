@@ -24,7 +24,7 @@ function App() {
       },
       {
         icon: "users",
-        name: "InReview",
+        name: "In Review",
         color: AppConstants.Colors.Purple
       },
       {
