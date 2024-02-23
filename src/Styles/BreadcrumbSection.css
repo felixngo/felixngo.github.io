@@ -1,6 +1,7 @@
 .WorkflowStatusIndicator {
     display: flex;
     align-items: center;
+    font-weight: normal !important;
 }
 
 .StepIndicator {

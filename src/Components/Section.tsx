@@ -52,7 +52,7 @@ export default function Section({
 
     return (
         <>
-            <BreadcrumbSection className="WorkflowStatusIndicator" style={sectionStyle}>
+            <BreadcrumbSection active={isActive()} className="WorkflowStatusIndicator" style={sectionStyle}>
                 <div className="StepIndicator" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
                     <Icon name={icon as SemanticICONS} size="large"/>
                     {small && !isActive() ? null : <p style={{margin: 0}}>{name}</p>}
