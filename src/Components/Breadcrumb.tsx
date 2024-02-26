@@ -28,7 +28,7 @@ export default function BreadcrumbComponent({ statuses, selected }: BreadcrumbPr
     const [activeIndexes, setActiveIndexes] = useState<number[]>([selected])
 
     const handleResize = () => {
-        if (window.innerWidth < (150 + (statuses.length - 1) * 50))
+        if (window.innerWidth < (300 + (statuses.length - 1) * 50))
             setSize(Size.small)
         else if (window.innerWidth < statuses.length * 150)
             setSize(Size.medium)

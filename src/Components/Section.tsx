@@ -43,6 +43,7 @@ export default function Section({
     }
 
     const onMouseEnter = () => {
+        console.log(activeIndexes[0])
         changeIndex([activeIndexes[0], index]);
     }
 
@@ -55,7 +56,7 @@ export default function Section({
             <BreadcrumbSection active={isActive()} className="WorkflowStatusIndicator" style={sectionStyle}>
                 <div className="StepIndicator" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
                     <Icon name={icon as SemanticICONS} size="large"/>
-                    {small && !isActive() ? null : <p style={{margin: 0}}>{name}</p>}
+                    {!small || isActive() || index - 1 == activeIndexes[0] ? <p style={{margin: 0}}>{name}</p> : null}
                 </div>
             </BreadcrumbSection>
             {position !== "end" ?
