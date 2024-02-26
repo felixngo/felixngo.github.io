@@ -1,0 +1,46 @@
+name: Sandbox CI
+on: [push, pull_request]
+
+jobs:
+  Build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Setup Node.js 20.x
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20.x
+    - name: Install dependencies
+      run: npm install
+    - name: Build
+      run: npm run build
+
+  Test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Setup Node.js 20.x
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20.x
+    - name: Install dependencies
+      run: npm install
+    - name: Run tests
+      run: npm test
+
+  Linter:
+    name: Lint
+    runs-on: ubuntu-latest
+    needs: Test
+    steps:
+    - uses: actions/checkout@v4
+    - name: Setup Node.js 20.x
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20.x
+    - name: Install dependencies
+      run: npm install
+    - name: Lint
+      run: npm run lint
