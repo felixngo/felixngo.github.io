@@ -6,7 +6,7 @@ describe('Section component', () => {
         const mockChangeIndex = jest.fn();
         const {container} = render(
             <Section
-                icon="someIcon"
+                icon="check"
                 name="Some Name"
                 color="blue"
                 position="middle"
@@ -24,7 +24,7 @@ describe('Section component', () => {
         const mockChangeIndex = jest.fn();
         const {container} = render(
             <Section
-                icon="someIcon"
+                icon="check"
                 name="Some Name"
                 color="blue"
                 position="middle"
@@ -45,7 +45,7 @@ describe('Section component', () => {
         const mockChangeIndex = jest.fn();
         const {container} = render(
             <Section
-                icon="someIcon"
+                icon="check"
                 name="Some Name"
                 color="blue"
                 position="middle"
