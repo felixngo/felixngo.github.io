@@ -55,7 +55,6 @@ function App() {
                     icon={statuses[index].icon}
                     onSelect={() => {
                         setIndex((index + 1) % statuses.length)
-                        console.log(index)
                     }}
                     onDelete={() => {
                         setShowSideNav(false)

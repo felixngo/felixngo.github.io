@@ -41,11 +41,13 @@ export default function BreadcrumbComponent({ statuses, selected }: BreadcrumbPr
     }
 
     useEffect(() => {
+        console.log("do")
         handleResize();
         window.addEventListener("resize", handleResize);
         return () => {
             window.removeEventListener('resize', handleResize);
         };
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (
