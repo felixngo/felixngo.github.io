@@ -2,7 +2,7 @@ import {Dropdown, Icon, SemanticICONS} from "semantic-ui-react";
 import {Status} from "./Breadcrumb.tsx";
 import '../Styles/StatusDropdown.css'
 
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
 interface StatusDropdownProps {
     statuses: Status[];
@@ -15,6 +15,10 @@ export default function StatusDropdown({statuses, selectedIndex}: StatusDropdown
     const style = {
         backgroundColor: statuses[selected].color,
     }
+
+    useEffect(() => {
+        setSelected(selectedIndex)
+    }, [selectedIndex]);
 
     const dropdownItems = statuses.map((status, index) => ({
         active: index===selected,

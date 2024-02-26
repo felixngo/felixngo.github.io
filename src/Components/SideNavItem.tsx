@@ -35,7 +35,7 @@ export default function SideNavItem({text, secondaryText, color, icon, onSelect,
     })
 
     const handleSelectClick = () => {
-        setSelected(!selected)
+        setSelected(true)
         onSelect()
     }
     return (
