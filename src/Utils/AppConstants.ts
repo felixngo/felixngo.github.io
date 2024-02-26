@@ -10,5 +10,7 @@ export const AppConstants = {
         Purple: "#9B0FF1",
         Blue: "#2089C9",
         Green: "#5AC361",
+        SilverSurfer: "#DBE0E8",
+        LightBlack: "#2D2D2D",
     }
 }

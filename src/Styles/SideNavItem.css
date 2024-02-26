@@ -1,0 +1,69 @@
+.sideNavItem {
+    width: 204px !important;
+    border-radius: 6px !important;
+    border: 1px solid #DBE0E8 !important;
+}
+
+.sideNavItem:hover {
+    background: #2089C9;
+}
+
+.sideNavItemContent {
+    display: flex;
+    flex-direction: row;
+    padding: 0 !important;
+    justify-content: space-between;
+}
+
+.iconPanel {
+    display: flex;
+    padding: 12px 4px;
+    align-items: center;
+    border-radius: 5px 0 0 5px;
+    background: #404E5B;
+}
+
+.trashPanel {
+    display: flex;
+    border-radius: 0 5px 5px 0;
+    align-items: center;
+    background: #FFFFFF;
+    color: #404E5B;
+}
+
+.text {
+    font-family: "Poppins", serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.secondaryText {
+    font-size: 11px !important;
+}
+
+.elementIcon {
+    color: #FFFFFF;
+}
+
+.primaryContent {
+    padding-left: 12px;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+}
+
+.textContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sideNavIcon {
+    font-size: 17px !important;
+    width: 26px !important;
+    height: 26px !important;
+    margin: 0!important;
+    justify-content: center !important;
+    align-items: center !important;
+    display: flex !important;
+}
