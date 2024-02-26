@@ -4,7 +4,7 @@ on: [push, pull_request]
 jobs:
   Build:
     name: Build
-    runs-on: ubuntu-latest
+    runs-on: alpine-latest
     steps:
     - uses: actions/checkout@v4
     - name: Setup Node.js 20.x
@@ -18,7 +18,7 @@ jobs:
 
   Test:
     name: Test
-    runs-on: ubuntu-latest
+    runs-on: alpine-latest
     steps:
     - uses: actions/checkout@v4
     - name: Setup Node.js 20.x
@@ -32,7 +32,7 @@ jobs:
 
   Linter:
     name: Lint
-    runs-on: ubuntu-latest
+    runs-on: alpine-latest
     needs: Test
     steps:
     - uses: actions/checkout@v4
