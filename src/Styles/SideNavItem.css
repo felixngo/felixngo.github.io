@@ -1,11 +1,19 @@
 .sideNavItem {
     width: 204px !important;
     border-radius: 6px !important;
-    border: 1px solid #DBE0E8 !important;
+    box-shadow: none !important;
+}
+
+.selectedBorder {
+    border: 1px solid #2089C9 !important;
+}
+
+.unselectedBorder {
+    border: 1px solid #DBE0E8!important;
 }
 
 .sideNavItem:hover {
-    background: #2089C9;
+    cursor: grab;
 }
 
 .sideNavItemContent {
@@ -20,7 +28,6 @@
     padding: 12px 4px;
     align-items: center;
     border-radius: 5px 0 0 5px;
-    background: #404E5B;
 }
 
 .trashPanel {
@@ -66,4 +73,8 @@
     justify-content: center !important;
     align-items: center !important;
     display: flex !important;
+}
+
+.trashPanel :hover {
+    cursor: pointer !important;
 }

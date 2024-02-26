@@ -43,7 +43,6 @@ export default function Section({
     }
 
     const onMouseEnter = () => {
-        console.log(activeIndexes[0])
         changeIndex([activeIndexes[0], index]);
     }
 
